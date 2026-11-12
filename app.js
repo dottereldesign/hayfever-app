@@ -54,3 +54,8 @@ if (rawInvite) {
     showDialog();
   }
 }
+document.querySelectorAll('.comparison thead a').forEach(link => {
+  link.addEventListener('click', () => {
+    document.querySelector('.comparison-sources').open = true;
+  });
+});
